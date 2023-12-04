@@ -9,7 +9,6 @@ import session from "express-session";
 import UserRoutes from "./users/routes.js";
 import "dotenv/config";
 import mongoose from "mongoose";
-mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
 
 process.on('uncaughtException', function (err) {
     console.log('Caught exception: ' + err);
