@@ -15,7 +15,8 @@ process.on('uncaughtException', function (err) {
 });
 
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas';
-console.log(CONNECTION_STRING)
+console.log(CONNECTION_STRING);
+console.log(process.env.FRONTEND_URL);
 mongoose.connect(CONNECTION_STRING);
 
 const app = express()
